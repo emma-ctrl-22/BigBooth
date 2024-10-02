@@ -10,6 +10,7 @@ export default function HomeScreen() {
     const [loading, setLoading] = useState(true);
     const [selectedOrder, setSelectedOrder] = useState(null);
     const [bottomSheetVisible, setBottomSheetVisible] = useState(false);
+    const [selectCarType,setSelectedCarType] = useState(false)
 
     useEffect(() => {
         const fetchDriverIdAndOrders = async () => {
@@ -154,6 +155,8 @@ export default function HomeScreen() {
                     </View>
                 </BottomSheet>
             )}
+
+            
         </SafeAreaView>
     );
 }
